@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Google Search</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <header>  
+        <nav>  
+            <a href="image_search.html">Image Search</a>  
+            <a href="advanced_search.html">Advanced Search</a>  
+        </nav>  
+    </header>  
+    <main>  
+        <div class="search-container">  
+            <input type="text" id="searchQuery" placeholder="Search Google...">  
+            <button onclick="alert('Simulated search: ' + document.getElementById('searchQuery').value)">Google Search</button>  
+            <button onclick="window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent(document.getElementById('searchQuery').value) + '&btnI=I%27m+Feeling+Lucky';">I'm Feeling Lucky</button>  
+        </div>  
+    </main>  
+</body>  
+</html>
